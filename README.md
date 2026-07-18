@@ -12,7 +12,8 @@ When I started my development journey, I faced a common challenge that many stud
 
 There were many technologies, courses, and career options available, but finding the right direction was difficult.
 
-This personal experience inspired me to build Virtosa** — a platform that uses AI to help users understand their current skills, identify improvement areas, and receive personalized career guidance.
+This personal experience inspired me to build Virtosa— a platform that uses AI to help users understand their current skills, identify improvement areas, and receive personalized career guidance.
+
 <img width="1315" height="623" alt="Screenshot 2026-07-18 at 9 22 55 PM" src="https://github.com/user-attachments/assets/183999c9-6c38-4516-8b24-2d91f499f2ca" />
 
 
@@ -22,7 +23,7 @@ The goal is simple:
 
 📢 Project Journey
 
-Virtosa started as my **first university project**, created from an idea to solve real career guidance challenges.
+Virtosa started as my project journey , created from an idea to solve real career guidance challenges.
 
 I built it as a personal challenge, starting with a limited tech stack and gradually learning new technologies to transform it into a complete AI-powered career assistant.
 
