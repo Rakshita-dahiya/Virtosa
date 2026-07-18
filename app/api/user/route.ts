@@ -13,7 +13,7 @@ export async function GET() {
       );
     }
 
-    // Check if user already exists
+    
     const existingUser = await prisma.user.findUnique({
       where: {
         clerkId: user.id,
@@ -27,7 +27,7 @@ export async function GET() {
       });
     }
 
-    // Create new user
+   
     const newUser = await prisma.user.create({
       data: {
         clerkId: user.id,

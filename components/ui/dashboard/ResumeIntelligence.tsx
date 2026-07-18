@@ -100,7 +100,7 @@ export default function ResumeIntelligence() {
 
           {resumeUrl && (
             <p className="text-green-600 mt-2">
-              ✅ Resume uploaded successfully
+               Resume uploaded successfully
             </p>
           )}
 

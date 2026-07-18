@@ -3,7 +3,7 @@ import { ai } from "@/lib/gemini";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
 
-// Test GET request
+
 export async function GET() {
   return NextResponse.json({
     success: true,
@@ -11,10 +11,9 @@ export async function GET() {
   });
 }
 
-// Analyze Resume
 export async function POST(req: NextRequest) {
   try {
-    // Get logged in user
+   
     const { userId } = await auth();
 
     if (!userId) {
@@ -27,7 +26,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Find user in database
     const user = await prisma.user.findUnique({
       where: {
         clerkId: userId,
@@ -56,7 +54,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Download uploaded resume
+    
     const fileResponse = await fetch(resumeUrl);
 
     if (!fileResponse.ok) {
@@ -65,7 +63,6 @@ export async function POST(req: NextRequest) {
 
     const buffer = Buffer.from(await fileResponse.arrayBuffer());
 
-    // Send PDF to Gemini
     const result = await ai.models.generateContent({
       model: "gemini-2.5-flash",
       contents: [
@@ -100,10 +97,10 @@ Return ONLY valid JSON.
       ],
     });
 
-    // Parse Gemini JSON
+   
     const analysis = JSON.parse(result.text ?? "{}");
 
-    // Save to database
+
     await prisma.resume.create({
       data: {
         fileName: "Resume.pdf",
