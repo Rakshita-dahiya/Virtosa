@@ -1,0 +1,722 @@
+"use client";
+import Image from "next/image";
+export default function CareerSnapshot() {
+  return (
+    <div className="space-y-8">
+
+      {/* ================= Welcome ================= */}
+
+<div className="bg-[#F5F1E8] border border-[#E7DFD2] rounded-3xl p-10">
+
+  <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
+
+    {/* Left */}
+
+    <div>
+
+      <h1 className="text-4xl font-bold text-[#1C1C1C]">
+        Welcome back !!
+      </h1>
+
+      <p className="mt-3 text-gray-600 text-lg">
+        Here's your AI-powered career snapshot for today.
+      </p>
+
+    </div>
+
+    {/* Right Image */}
+
+    <div className="flex justify-center">
+
+      <Image
+        src="/Careerai.png"
+        alt="Career AI"
+        width={260}
+        height={260}
+        className="object-contain"
+        priority
+      />
+
+    </div>
+
+  </div>
+
+</div>
+
+      {/* ================= Career Score ================= */}
+      <div className="bg-white rounded-3xl border border-[#E7DFD2] p-10">
+
+        <div className="flex justify-between items-center">
+         
+          <div>
+
+            <h2 className="text-3xl font-bold">
+              Career Readiness
+            </h2>
+
+            <p className="text-gray-500 mt-2">
+              Overall AI evaluation of your profile.
+            </p>
+
+          </div>
+
+          <div className="relative w-44 h-44">
+
+            <svg className="w-44 h-44 rotate-[-90deg]">
+
+              <circle
+                cx="88"
+                cy="88"
+                r="70"
+                stroke="#E5E5E5"
+                strokeWidth="12"
+                fill="none"
+              />
+
+              <circle
+                cx="88"
+                cy="88"
+                r="70"
+                stroke="#1C1C1C"
+                strokeWidth="12"
+                fill="none"
+                strokeDasharray="440"
+                strokeDashoffset="88"
+                strokeLinecap="round"
+              />
+
+            </svg>
+
+            <div className="absolute inset-0 flex flex-col items-center justify-center">
+
+              <h2 className="text-5xl font-bold">
+                80%
+              </h2>
+
+              <span className="text-gray-500">
+                Excellent
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+{/* ================= Statistics ================= */}
+
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+  {/* Resume Score */}
+  <div className="bg-white rounded-3xl border border-[#E7DFD2] p-6 hover:shadow-lg transition">
+
+    <p className="text-gray-500 text-sm">
+      Resume Score
+    </p>
+
+    <h2 className="text-4xl font-bold mt-3">
+      82%
+    </h2>
+
+    <div className="mt-5 h-2 bg-[#EFEAE2] rounded-full">
+
+      <div
+        className="h-2 bg-black rounded-full"
+        style={{ width: "82%" }}
+      />
+
+    </div>
+
+    <p className="mt-3 text-sm text-green-600">
+      ↑ Improved by 8%
+    </p>
+
+  </div>
+
+  {/* ATS Score */}
+  <div className="bg-white rounded-3xl border border-[#E7DFD2] p-6 hover:shadow-lg transition">
+
+    <p className="text-gray-500 text-sm">
+      ATS Compatibility
+    </p>
+
+    <h2 className="text-4xl font-bold mt-3">
+      91%
+    </h2>
+
+    <div className="mt-5 h-2 bg-[#EFEAE2] rounded-full">
+
+      <div
+        className="h-2 bg-black rounded-full"
+        style={{ width: "91%" }}
+      />
+
+    </div>
+
+    <p className="mt-3 text-sm text-green-600">
+      Excellent
+    </p>
+
+  </div>
+
+  {/* Skill Match */}
+  <div className="bg-white rounded-3xl border border-[#E7DFD2] p-6 hover:shadow-lg transition">
+
+    <p className="text-gray-500 text-sm">
+      Skill Match
+    </p>
+
+    <h2 className="text-4xl font-bold mt-3">
+      74%
+    </h2>
+
+    <div className="mt-5 h-2 bg-[#EFEAE2] rounded-full">
+
+      <div
+        className="h-2 bg-black rounded-full"
+        style={{ width: "74%" }}
+      />
+
+    </div>
+
+    <p className="mt-3 text-sm text-yellow-600">
+      Needs Improvement
+    </p>
+
+  </div>
+
+  {/* Job Readiness */}
+  <div className="bg-white rounded-3xl border border-[#E7DFD2] p-6 hover:shadow-lg transition">
+
+    <p className="text-gray-500 text-sm">
+      Job Readiness
+    </p>
+
+    <h2 className="text-4xl font-bold mt-3">
+      68%
+    </h2>
+
+    <div className="mt-5 h-2 bg-[#EFEAE2] rounded-full">
+
+      <div
+        className="h-2 bg-black rounded-full"
+        style={{ width: "68%" }}
+      />
+
+    </div>
+
+    <p className="mt-3 text-sm text-orange-600">
+      Keep Practicing
+    </p>
+
+  </div>
+
+</div>
+{/* ================= AI Insights ================= */}
+{/* ================= AI Insights ================= */}
+
+<div className="max-w-7xl mx-auto">
+
+  <div className="bg-[#F5F1E8] border border-[#E7DFD2] rounded-3xl p-10">
+
+    <div className="text-center">
+
+      <h2 className="text-3xl font-bold text-[#1C1C1C]">
+        AI Insights
+      </h2>
+
+      <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+        Personalized recommendations generated by Virtosa AI to improve your
+        career readiness.
+      </p>
+
+    </div>
+
+    {/* Insight Cards */}
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+
+      {/* Card 1 */}
+
+      <div className="bg-white rounded-2xl border border-[#E7DFD2] p-6 shadow-sm hover:shadow-lg transition">
+
+        <div className="text-4xl mb-4">
+          
+        </div>
+
+        <h3 className="text-xl font-semibold text-[#1C1C1C]">
+          Improve SQL
+        </h3>
+
+        <p className="text-gray-600 mt-3 leading-7">
+          SQL appears in 82% of Software Engineer job descriptions.
+          Strengthening SQL will significantly improve your job match.
+        </p>
+
+      </div>
+
+      {/* Card 2 */}
+
+      <div className="bg-white rounded-2xl border border-[#E7DFD2] p-6 shadow-sm hover:shadow-lg transition">
+
+        <div className="text-4xl mb-4">
+          
+        </div>
+
+        <h3 className="text-xl font-semibold text-[#1C1C1C]">
+          Resume Enhancement
+        </h3>
+
+        <p className="text-gray-600 mt-3 leading-7">
+          Add measurable project achievements and quantify your impact to
+          improve ATS ranking.
+        </p>
+
+      </div>
+
+      {/* Card 3 */}
+
+      <div className="bg-white rounded-2xl border border-[#E7DFD2] p-6 shadow-sm hover:shadow-lg transition">
+
+        <div className="text-4xl mb-4">
+          
+        </div>
+
+        <h3 className="text-xl font-semibold text-[#1C1C1C]">
+          Mock Interview
+        </h3>
+
+        <p className="text-gray-600 mt-3 leading-7">
+          Completing two AI interviews could increase your hiring readiness
+          score by approximately 8%.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+{/* ================= Recommended Jobs + Activity ================= */}
+
+<div className="grid lg:grid-cols-3 gap-8">
+
+  {/* ================= Recommended Jobs ================= */}
+
+  <div className="lg:col-span-2 bg-white rounded-3xl border border-[#E7DFD2] p-8">
+
+    <div className="flex items-center justify-between">
+
+      <div>
+
+        <h2 className="text-2xl font-bold">
+          Recommended Jobs
+        </h2>
+
+        <p className="text-gray-500 mt-2">
+          AI matched these roles based on your profile.
+        </p>
+
+      </div>
+
+      <button className="px-5 py-2 rounded-xl bg-black text-white hover:bg-gray-800 transition">
+        View All
+      </button>
+
+    </div>
+
+    <div className="mt-8 space-y-5">
+
+      {/* Job */}
+
+      <div className="border border-[#E7DFD2] rounded-2xl p-6 hover:shadow-md transition">
+
+        <div className="flex justify-between items-start">
+
+          <div>
+
+            <h3 className="text-xl font-semibold">
+              Frontend Developer
+            </h3>
+
+            <p className="text-gray-500 mt-1">
+              Google • Bengaluru
+            </p>
+
+          </div>
+
+          <span className="px-3 py-1 rounded-full bg-green-100 text-green-700 text-sm">
+            94% Match
+          </span>
+
+        </div>
+
+        <div className="mt-5 flex gap-3 flex-wrap">
+
+          <span className="px-3 py-1 rounded-full bg-[#F5F1E8]">
+            React
+          </span>
+
+          <span className="px-3 py-1 rounded-full bg-[#F5F1E8]">
+            Next.js
+          </span>
+
+          <span className="px-3 py-1 rounded-full bg-[#F5F1E8]">
+            TypeScript
+          </span>
+
+        </div>
+
+      </div>
+
+      {/* Job */}
+
+      <div className="border border-[#E7DFD2] rounded-2xl p-6 hover:shadow-md transition">
+
+        <div className="flex justify-between items-start">
+
+          <div>
+
+            <h3 className="text-xl font-semibold">
+              Software Engineer
+            </h3>
+
+            <p className="text-gray-500 mt-1">
+              Microsoft • Hyderabad
+            </p>
+
+          </div>
+
+          <span className="px-3 py-1 rounded-full bg-yellow-100 text-yellow-700 text-sm">
+            86% Match
+          </span>
+
+        </div>
+
+        <div className="mt-5 flex gap-3 flex-wrap">
+
+          <span className="px-3 py-1 rounded-full bg-[#F5F1E8]">
+            Java
+          </span>
+
+          <span className="px-3 py-1 rounded-full bg-[#F5F1E8]">
+            SQL
+          </span>
+
+          <span className="px-3 py-1 rounded-full bg-[#F5F1E8]">
+            DSA
+          </span>
+
+        </div>
+
+      </div>
+
+      {/* Job */}
+
+      <div className="border border-[#E7DFD2] rounded-2xl p-6 hover:shadow-md transition">
+
+        <div className="flex justify-between items-start">
+
+          <div>
+
+            <h3 className="text-xl font-semibold">
+              React Developer
+            </h3>
+
+            <p className="text-gray-500 mt-1">
+              Amazon • Remote
+            </p>
+
+          </div>
+
+          <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm">
+            89% Match
+          </span>
+
+        </div>
+
+        <div className="mt-5 flex gap-3 flex-wrap">
+
+          <span className="px-3 py-1 rounded-full bg-[#F5F1E8]">
+            React
+          </span>
+
+          <span className="px-3 py-1 rounded-full bg-[#F5F1E8]">
+            APIs
+          </span>
+
+          <span className="px-3 py-1 rounded-full bg-[#F5F1E8]">
+            Tailwind
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  {/* ================= Recent Activity ================= */}
+
+  <div className="bg-white rounded-3xl border border-[#E7DFD2] p-8">
+
+    <h2 className="text-2xl font-bold">
+      Recent Activity
+    </h2>
+
+    <p className="text-gray-500 mt-2">
+      Your latest AI actions.
+    </p>
+
+    <div className="mt-8 space-y-8">
+
+      <div className="flex gap-4">
+
+        <div className="w-3 h-3 mt-2 rounded-full bg-green-500" />
+
+        <div>
+
+          <h3 className="font-semibold">
+            Resume Uploaded
+          </h3>
+
+          <p className="text-gray-500 text-sm mt-1">
+            Today • 10:15 AM
+          </p>
+
+        </div>
+
+      </div>
+
+      <div className="flex gap-4">
+
+        <div className="w-3 h-3 mt-2 rounded-full bg-blue-500" />
+
+        <div>
+
+          <h3 className="font-semibold">
+            AI Resume Analysis Completed
+          </h3>
+
+          <p className="text-gray-500 text-sm mt-1">
+            Today • 10:18 AM
+          </p>
+
+        </div>
+
+      </div>
+
+      <div className="flex gap-4">
+
+        <div className="w-3 h-3 mt-2 rounded-full bg-yellow-500" />
+
+        <div>
+
+          <h3 className="font-semibold">
+            Skill Gap Generated
+          </h3>
+
+          <p className="text-gray-500 text-sm mt-1">
+            Yesterday
+          </p>
+
+        </div>
+
+      </div>
+
+      <div className="flex gap-4">
+
+        <div className="w-3 h-3 mt-2 rounded-full bg-purple-500" />
+
+        <div>
+
+          <h3 className="font-semibold">
+            Mock Interview Completed
+          </h3>
+
+          <p className="text-gray-500 text-sm mt-1">
+            2 Days Ago
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+{/* ================= Performance Analytics ================= */}
+
+<div className="grid lg:grid-cols-2 gap-8">
+
+  {/* Weekly Progress */}
+
+  <div className="bg-white rounded-3xl border border-[#E7DFD2] p-8">
+
+    <h2 className="text-2xl font-bold">
+      Weekly Performance
+    </h2>
+
+    <p className="text-gray-500 mt-2">
+      Your career growth over the last 7 days.
+    </p>
+
+    <div className="mt-10 space-y-6">
+
+      {/* Resume Quality */}
+
+      <div>
+
+        <div className="flex justify-between mb-2">
+          <span>Resume Quality</span>
+          <span className="font-semibold">91%</span>
+        </div>
+
+        <div className="w-full h-3 bg-gray-200 rounded-full">
+          <div className="h-3 rounded-full bg-black w-[91%]" />
+        </div>
+
+      </div>
+
+      {/* ATS Compatibility */}
+
+      <div>
+
+        <div className="flex justify-between mb-2">
+          <span>ATS Compatibility</span>
+          <span className="font-semibold">87%</span>
+        </div>
+
+        <div className="w-full h-3 bg-gray-200 rounded-full">
+          <div className="h-3 rounded-full bg-black w-[87%]" />
+        </div>
+
+      </div>
+
+      {/* Interview Readiness */}
+
+      <div>
+
+        <div className="flex justify-between mb-2">
+          <span>Interview Readiness</span>
+          <span className="font-semibold">76%</span>
+        </div>
+
+        <div className="w-full h-3 bg-gray-200 rounded-full">
+          <div className="h-3 rounded-full bg-black w-[76%]" />
+        </div>
+
+      </div>
+
+      {/* Technical Skills */}
+
+      <div>
+
+        <div className="flex justify-between mb-2">
+          <span>Technical Skills</span>
+          <span className="font-semibold">81%</span>
+        </div>
+
+        <div className="w-full h-3 bg-gray-200 rounded-full">
+          <div className="h-3 rounded-full bg-black w-[81%]" />
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  {/* AI Achievements */}
+
+  <div className="bg-white rounded-3xl border border-[#E7DFD2] p-8">
+
+    <h2 className="text-2xl font-bold">
+      Achievements
+    </h2>
+
+    <p className="text-gray-500 mt-2">
+      Milestones unlocked by your progress.
+    </p>
+
+    <div className="mt-8 grid grid-cols-2 gap-5">
+
+      <div className="rounded-2xl bg-[#F5F1E8] p-6 text-center">
+
+        <div className="text-5xl">
+          
+        </div>
+
+        <h3 className="font-semibold mt-4">
+          Resume Expert
+        </h3>
+
+        <p className="text-sm text-gray-500 mt-2">
+          Resume score above 90%
+        </p>
+
+      </div>
+
+      <div className="rounded-2xl bg-[#F5F1E8] p-6 text-center">
+
+        <div className="text-5xl">
+          
+        </div>
+
+        <h3 className="font-semibold mt-4">
+          Interview Ready
+        </h3>
+
+        <p className="text-sm text-gray-500 mt-2">
+          Completed 5 mock interviews
+        </p>
+
+      </div>
+
+      <div className="rounded-2xl bg-[#F5F1E8] p-6 text-center">
+
+        <div className="text-5xl">
+          
+        </div>
+
+        <h3 className="font-semibold mt-4">
+          Fast Learner
+        </h3>
+
+        <p className="text-sm text-gray-500 mt-2">
+          Added 10 new skills
+        </p>
+
+      </div>
+
+      <div className="rounded-2xl bg-[#F5F1E8] p-6 text-center">
+
+        <div className="text-5xl">
+          
+        </div>
+
+        <h3 className="font-semibold mt-4">
+          Job Hunter
+        </h3>
+
+        <p className="text-sm text-gray-500 mt-2">
+          Applied to 25 jobs
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+    </div>
+    
+  );
+}

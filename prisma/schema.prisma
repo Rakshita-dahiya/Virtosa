@@ -1,0 +1,94 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  clerkId   String   @unique
+  email     String   @unique
+  name      String?
+
+  resumes   Resume[]
+  skills    Skill[]
+
+  careerRoadmaps    CareerRoadmap[]
+  skillGapAnalyses  SkillGapAnalysis[]
+  jobMatches        JobMatch[]
+  interviewSessions InterviewSession[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Resume {
+  id            String   @id @default(cuid())
+  fileName      String
+  fileUrl       String
+  extractedText String?
+  resumeScore   Int?
+  suggestions   String?
+
+  userId String
+  user   User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+}
+
+model Skill {
+  id       String @id @default(cuid())
+  name     String
+  level    String?
+  category String?
+
+  userId String
+  user   User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model CareerRoadmap {
+  id         String   @id @default(cuid())
+  targetRole String
+  roadmap    Json
+
+  userId String
+  user   User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+}
+
+model SkillGapAnalysis {
+  id         String   @id @default(cuid())
+  targetRole String
+  analysis   Json
+
+  userId String
+  user   User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+}
+
+model JobMatch {
+  id       String   @id @default(cuid())
+  jobRole  String
+  analysis Json
+
+  userId String
+  user   User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+}
+
+model InterviewSession {
+  id        String   @id @default(cuid())
+  role      String
+  questions Json
+
+  userId String
+  user   User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+}
