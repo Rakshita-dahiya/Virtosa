@@ -4,11 +4,11 @@
 
 Virtosa is an AI-driven career development platform designed to help students, fresh graduates, and professionals make better career decisions.
 
-The platform combines **AI resume analysis, personalized career roadmaps, skill gap analysis, job matching, and interview preparation** into one complete career ecosystem.
+The platform combines AI resume analysis, personalized career roadmaps, skill gap analysis, job matching, and interview preparation** into one complete career ecosystem.
 
 The Problem Behind Virtosa
 
-When I started my development journey, I faced a common challenge that many students and beginners experience — not knowing what to learn, where to start, and which skills are important for building a career.**
+When I started my development journey, I faced a common challenge that many students and beginners experience — not knowing what to learn, where to start, and which skills are important for building a career.
 
 There were many technologies, courses, and career options available, but finding the right direction was difficult.
 
