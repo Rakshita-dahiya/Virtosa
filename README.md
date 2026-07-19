@@ -1,6 +1,6 @@
 🚀 Virtosa — AI Career Growth Companion
 
-> An AI-powered career assistant that helps users understand their skills, improve their resumes, plan career paths, and prepare for future opportunities.**
+> An AI-powered career assistant that helps users understand their skills, improve their resumes, plan career paths, and prepare for future opportunities.
 
 Virtosa is an AI-driven career development platform designed to help students, fresh graduates, and professionals make better career decisions.
 
